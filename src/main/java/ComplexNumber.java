@@ -27,9 +27,7 @@ public class ComplexNumber {
 
         ComplexNumber obj = (ComplexNumber) o;
 
-        if (Double.compare(obj.re, re) != 0) return false;
-
-        return Double.compare(obj.im, im) == 0;
+        return (Double.compare(obj.im, im) == 0) || (Double.compare(obj.re, re) == 0);
     }
 
     @Override
